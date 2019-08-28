@@ -216,7 +216,7 @@
 		NSString *base64Encoded = [imageData base64EncodedStringWithOptions:0];
 		[self.manager publishSaveImageEvent: tempPath withEncoded:base64Encoded];
 	} else {
-		[self.manager publishSaveImageEvent: NULL withEncoded: NULL];
+		[self.manager publishSaveImageEvent:@"" withEncoded:@""];
 	}
 }
 
